@@ -11,3 +11,7 @@ g++ src/test.cpp -o ./build/test
 ```
 ./build/test
 ```
+
+## plane_geometry
+这是关于平面几何的cpp程序，包括了点、线、园、矩形、三角形的类和每种图形的移动、缩放、旋转、镜像。
+在namespace plane_geometry中，主程序包含了测试代码。
