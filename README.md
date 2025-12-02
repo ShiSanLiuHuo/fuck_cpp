@@ -35,3 +35,9 @@ chcp 65001
 
 ## plane_geometry_plus
 这是平面几何的升级版，是多态版的实现
+
+## src
+### secant
+这是最优化一维搜素的割线法
+### newton_raphson
+这是最优化一维搜素的牛顿法
