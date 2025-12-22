@@ -1,19 +1,24 @@
-#include<iostream>
+#include <iostream>
+#include <algorithm>
+#include <iterator>
 
-void test(short val){
-    std::cout<< "这是short的重载"<<std::endl;
+double my_abs(double x){
+    return x >= 0 ? x : -x;
 }
 
-void test(unsigned char val){
-    std::cout<< "这是unsigned short的重载"<<std::endl;
+template<class InputIterator,class OutputIterator>
+void Mytransform_abs(InputIterator first,InputIterator last,OutputIterator result){
+    for(;first != last;first++,result++){
+        *result = (*first >=0)? *first:-*first;
+    }
 }
 
-void test(int val){
-    std::cout<< "这是int的重载"<<std::endl;
-}
+int main() {
+    Mytransform_abs(
+        std::istream_iterator<double>(std::cin),
+        std::istream_iterator<double>(),
+        std::ostream_iterator<double>(std::cout, "\n")
+    );
 
-int main(){
-    char a = 2;
-    test(a);
     return 0;
 }
