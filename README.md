@@ -41,3 +41,6 @@ chcp 65001
 这是最优化一维搜素的割线法
 ### newton_raphson
 这是最优化一维搜素的牛顿法
+
+## studentManager
+学生信息管理系统
